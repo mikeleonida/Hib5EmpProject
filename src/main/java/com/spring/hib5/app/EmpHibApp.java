@@ -13,13 +13,13 @@ public class EmpHibApp {
 	private static EmpService empService = new EmpServiceImpl();
 	
 	public static void main(String[] args) {
-		Emp e1 = new Emp(101, "Mike", "Bronx");
+		Emp e1 = new Emp(101, "Mike", "Bergenfield");
 		Emp e2 = new Emp(102, "Megan", "Manhattan");
 		
 		empService.saveEmp(e1);
 		empService.saveEmp(e2);
 		
-		e2.setCity("Bronx");
+		e2.setCity("Bergenfield");
 		if(empService.updateEmp(e2)) {
 			System.out.println("Employee updated successfully");
 		} else {
