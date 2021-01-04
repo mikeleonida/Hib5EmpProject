@@ -30,7 +30,7 @@ public class EmpDaoImpl implements EmpDao {
 		settings.put("hibernate.connection.username", "devuser");
 		settings.put("hibernate.connection.password", "guest");
 		settings.put("hibernate.show_sql", "true");
-		settings.put("hibernate.hbm2ddl.auto", "update");
+		settings.put("hibernate.hbm2ddl.auto", "create");
 
 		registryBuilder.applySettings(settings);
 		registry = registryBuilder.build();
